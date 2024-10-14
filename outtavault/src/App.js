@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import logo from './assets/img/logo.png'; // Replace this with your actual logo path
+import logo from './assets/img/logo.png'; // Updated path to logo
 
 function App() {
   return (
@@ -16,12 +16,17 @@ function App() {
             <li><a href="#about">About Us</a></li>
             <li><a href="#contact">Contact Us</a></li>
           </ul>
-          <button className="get-started">Get Started</button>
+          <div className="nav-buttons">
+            <button className="login-button">Login</button>
+            <button className="get-started-button">Get Started</button>
+          </div>
         </nav>
 
         <div className="hero-section">
-          <h1>Financial Choice.</h1>
-          <p>Make it easier with Krys, your trusted financial partner.</p>
+          <h1 className="hero-text">
+            <span className="hero-text-line1">Make Smart</span> <br />
+            <span className="hero-text-line2">Financial Choice</span>
+          </h1>
           <div className="stats">
             <span>4M+ Users</span>
             <span>1M Digital Transactions</span>
@@ -63,4 +68,3 @@ function App() {
 }
 
 export default App;
- 
